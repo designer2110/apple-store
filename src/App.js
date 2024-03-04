@@ -23,7 +23,6 @@ function App() {
   return (
     <div className="App">
      <CartContextProvider>
-      <button onClick={exportDataWithBatch2}>Export data</button>
         <BrowserRouter>
           <NavbarComp onLogin={handleLogin} />
           <Routes>
