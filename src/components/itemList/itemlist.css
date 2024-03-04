@@ -1,0 +1,9 @@
+.search {
+    width: 300px;
+    border-radius: 15px;
+    border: 1px #000 solid;
+}
+
+::placeholder {
+    text-align: center; 
+ }

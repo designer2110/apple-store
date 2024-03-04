@@ -23,7 +23,7 @@ function Card({ id, title, price, description, imgurl, discount }) {
         <p className="card-text text-secondary">
           {description.split(' ').slice(0, 5).join(' ')}
         </p>
-        <ButtonChild className="btn byn-outline">Go anywhere</ButtonChild>
+        <ButtonChild className="btn byn-outline">Add product</ButtonChild>
       </div>
     </div>
     </Link>

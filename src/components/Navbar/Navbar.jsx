@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { cartContext } from "../../storage/cartContext";
 import { useContext } from "react";
 import UserMenu from "./UserMenu";
+import "./navbar.css";
 
 function NavbarComp ({onLogin}) {
   function handleSubmit(evt) {
@@ -19,21 +20,21 @@ function NavbarComp ({onLogin}) {
          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link to="/page/1">
-        <Navbar.Brand>Apple store</Navbar.Brand>
+        <Navbar.Brand className="navbartext">Apple store</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-          <Link className="nav-link" to="/category/men's clothing">
+          <Link className="nav-link" to="/category/Mac">
             <a>Mac</a>
           </Link>
-          <Link className="nav-link" to="/category/women's clothing">
+          <Link className="nav-link" to="/category/Ipad">
             <a>Ipad</a>
           </Link>
-          <Link className="nav-link" to="/category/jewelery">
+          <Link className="nav-link" to="/category/Iphone">
           <a>Iphone</a>
           </Link>
-          <Link className="nav-link" to="/category/electronics">
+          <Link className="nav-link" to="/category/Watch">
           <a>Watch</a>
           </Link>
           </Nav>
